@@ -4,8 +4,8 @@ const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 // Número de tentativas permitidas
 let tentativas = 0;
 
-function verificarPalpite() {
-    const palpiteUsuario = document.getElementById("guessInput").value;
+function verificarNumero() {
+    const palpiteUsuario = document.getElementById("tente").value;
     tentativas++;
 
     if (palpiteUsuario == numeroSecreto) {
