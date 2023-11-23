@@ -35,4 +35,37 @@ button {
 
 
 }
+#content input{
 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: red;
+    font-size: 1.5rem;
+    padding: 5rem;
+    border-bottom: 1px solid white;
+    position: relative;
+    right: 46%;
+    top: 5rem;
+    outline: none;
+    font-size: 1rem;
+    padding: 4rem;
+    width: 30%;
+
+}
+#content input:focus {
+
+border-bottom: 1px solid rgb(43, 168, 226);
+
+}
+#content button{
+    padding: 5rem;
+    width: 20%;
+    font-size: 3rem;
+    background-color: rgb(134, 134, 233);
+    border: none;
+    border-radius: 1rem;
+    color: orange;
+    margin-top: 3rem;
+
+}
