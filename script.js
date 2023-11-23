@@ -1,21 +1,18 @@
-var numeroPensado;
-// var tentativas; // Variável não utilizada
+// Gera um número aleatório entre 1 e 100
+const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 
-function gerar() {
-   // Gera um número aleatório.
-   numeroPensado = Math.random() * 100; // Adiciona um ponto e vírgula para terminar a instrução
-   console.log(numeroPensado);
-}
+// Número de tentativas permitidas
+let tentativas = 0;
 
-function verificarNumero() {
-   // Implementa a lógica para verificar o número
-    var elemento = document.getElementById('tente').value;
-    if(tente > 100 || tente < 1)
-    {
-alert('Aposta invalida')
-return
+function verificarPalpite() {
+    const palpiteUsuario = document.getElementById("guessInput").value;
+    tentativas++;
+
+    if (palpiteUsuario == numeroSecreto) {
+        alert(`Parabéns! Você acertou o número ${numeroSecreto} em ${tentativas} tentativas.`);
+    } else if (palpiteUsuario < numeroSecreto) {
+        alert("Tente novamente. O número é maior.");
+    } else {
+        alert("Tente novamente. O número é menor.");
     }
-    alert('aposta valida')
 }
-
-// refresh(); // Função indefinida, podes querer remover esta linha
